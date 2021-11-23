@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1637585043" />
+    <testcase name="fp_mul_test" classname="MAC" file="/home/srini/Desktop/MAC/MAC.py" lineno="20" time="0.0643777847290039" sim_time_ns="3.001" ratio_time="46.61545924005629" />
+  </testsuite>
+</testsuites>
