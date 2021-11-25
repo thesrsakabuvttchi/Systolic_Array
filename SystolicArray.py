@@ -4,6 +4,9 @@ import struct
 from random import uniform
 import csv
 
+def int_to_str(x):
+    return('{0:032b}'.format(x))
+
 def to_int(x):
     return (sum([j<<8*i for i,j in enumerate(struct.pack("f", x ))]))
 
@@ -21,5 +24,7 @@ def to_float(b):
 def systolic_test(dut):
     for i in range(10):
         dut.clk.value <= i%2
-        print(bytes(to_int(10.0)))
+        dut.b.value=to_int(10.0)
         yield Timer(1,'ns')
+
+        print(dut.row[0].column[0].out_prop)
