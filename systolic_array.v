@@ -47,7 +47,7 @@ endgenerate
 generate
     for(i=0;i<4;i=i+1)
     begin
-        assign out[i] = row[3].column[i].out_prop;
+        assign out[i] = row[3].column[i].out_ans;
     end
 endgenerate
 

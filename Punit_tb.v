@@ -11,7 +11,11 @@ Punit testmult(a,b,c,clk,switch,ans,prop,a_prop);
 
 initial
 begin
+    #0 a<=32'b0_10000010_01000000000000000000000;
+    #0 c<=32'b0_10000010_01000000000000000000000;
     #0 b<=32'b0_10000010_01000000000000000000000;//10
+    #10 switch <= 1'b1;
+    b<=32'b0_00000000_00000000000000000000000;
 
 end
 
@@ -28,6 +32,6 @@ begin
 end
 
 initial begin
-	$monitor($time,"clk= %b,a = %b, b = %b, c = %b,\n Ans = %b, B_propogate =  %b, A_propogate = %b\n",clk,a,b,c,ans,prop,testmult.dormant);
+	$monitor($time,"clk= %b,a = %b, b = %b, c = %b,\n Ans = %b, B_propogate =  %b, A_propogate = %b\n",clk,a,b,c,ans,prop,a_prop);
 	end
 endmodule

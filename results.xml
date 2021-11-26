@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1637744122" />
-    <testcase name="systolic_test" classname="SystolicArray" file="/home/srini/Desktop/MAC/SystolicArray.py" lineno="23" time="0.09551787376403809" sim_time_ns="10.001" ratio_time="104.70291690857671" />
+    <property name="random_seed" value="1637925545" />
+    <testcase name="systolic_test" classname="SystolicArray" file="/home/srini/Desktop/MAC/SystolicArray.py" lineno="23" time="1.8126749992370605" sim_time_ns="10.001" ratio_time="5.51726040476607" />
   </testsuite>
 </testsuites>
